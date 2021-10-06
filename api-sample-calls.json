@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "cee19644-1f2e-4d2a-a00e-078fc402dda1",
+		"name": "specno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users/?email=mavhungu3@gmail.com&password=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mavhungu3@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users/login?email=mavhungu3@gmail.com&password=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mavhungu3@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/mails?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ&to=isaac@test.com&subject=Test&message=Hi there",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mails"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						},
+						{
+							"key": "to",
+							"value": "isaac@test.com"
+						},
+						{
+							"key": "subject",
+							"value": "Test"
+						},
+						{
+							"key": "message",
+							"value": "Hi there"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get mails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/mails/?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mails",
+						""
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete mail",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/mails/8?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mails",
+						"8"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleted mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/mails/recover/7?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mails",
+						"recover",
+						"7"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/labels/?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ&label=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"labels",
+						""
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						},
+						{
+							"key": "label",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete label",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/labels/3?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"labels",
+						"3"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Link label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/labels/link/7?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ&mailID=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"labels",
+						"link",
+						"7"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						},
+						{
+							"key": "mailID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unlink Label",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/labels/unlink/2?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ&mailID=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"labels",
+						"unlink",
+						"2"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						},
+						{
+							"key": "mailID",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get mail by label",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/mails/label/2?session=WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mails",
+						"label",
+						"2"
+					],
+					"query": [
+						{
+							"key": "session",
+							"value": "WV4tx7TkEoEepb5eIuMSOmCOTK2yJQLdyVm1z2ou99c1s7oesgRSHMrNirYaJ6ufYBAMPxaG0ObXyseQx1kQsv8eGa1LchZZte0D5A9MEF5GsKJCMqbDYp31SRNkKqr6KByHXhFeppHufCnnbpOhKTlkpgSr3QHMQj2Y1sLvh4iMJDtDrzUA9npFSQ4PiruBkawCBne9MLeNwjfkSqQSKzBGEVqVKowQaGpPVdryQoB9QGZf7To2onu5WBwEaRQ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
