@@ -15,3 +15,6 @@ npm start
 ```
 
 Refer to api-sample-calls.json for testing API calls
+
+ERD diagram
+![image](https://user-images.githubusercontent.com/35689149/136299725-ae3dea68-60a3-4a7c-a14c-d5b7dd950ad4.png)
